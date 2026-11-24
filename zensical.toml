@@ -1,7 +1,7 @@
 [project]
 site_name = "Besisglas Product Documentation"
 site_url = "https://docs.besisglas.cc/"
-# site_description = "Your project description"
+site_description = "Find your Besisglas product, setup guidance and support."
 # site_author = "Your name"
 
 # copyright = "Copyright &copy; 2026 Your name"
@@ -11,11 +11,35 @@ site_url = "https://docs.besisglas.cc/"
 # edit_uri = "edit/main/docs/"
 
 nav = [
-  { "Get started" = "index.md" },
-  { "Markdown in 5min" = "markdown.md" },
+  { "Home" = "index.md" },
+  { "Products" = [
+    "products/index.md",
+    { "Temperature & Humidity" = [
+      { "TH01 · AAA" = "products/th01/index.md" },
+      { "TH01 Round" = "products/th01-round/index.md" },
+      { "TH01 LCD" = "products/th01-lcd/index.md" },
+    ] },
+    { "Soil Sensors" = [{ "STH01" = "products/sth01/index.md" }] },
+    { "Presence Sensors" = [{ "MS01" = "products/ms01/index.md" }] },
+    { "Door & Window Sensors" = [
+      { "DS01" = "products/ds01/index.md" },
+      { "DS02 · Wired contact" = "products/ds02/index.md" },
+    ] },
+    { "Wireless Buttons" = [{ "Zigbee Button" = "products/ts0041/index.md" }] },
+    { "Water Leak Sensors" = ["products/water-leak-sensor/index.md"] },
+    { "433 MHz Receivers" = ["products/433-receiver/index.md"] },
+  ] },
+  { "Getting Started" = [
+    "getting-started/index.md",
+    { "Zigbee2MQTT" = "getting-started/zigbee2mqtt.md" },
+    { "Home Assistant ZHA" = "getting-started/zha.md" },
+    { "Pairing & Reset" = "getting-started/pairing-reset.md" },
+  ] },
+  { "Troubleshooting" = "troubleshooting/index.md" },
+  { "Support" = "support/index.md" },
 ]
 
-# extra_css = ["stylesheets/extra.css"]
+extra_css = ["stylesheets/extra.css"]
 # extra_javascript = ["javascripts/extra.js"]
 
 [project.theme]
@@ -62,21 +86,9 @@ features = [
 # code = "Jetbrains Mono"
 
 [[project.theme.palette]]
-media = "(prefers-color-scheme)"
-toggle.icon = "lucide/sun-moon"
-toggle.name = "Switch to light mode"
-
-[[project.theme.palette]]
-media = "(prefers-color-scheme: light)"
 scheme = "default"
-toggle.icon = "lucide/sun"
-toggle.name = "Switch to dark mode"
-
-[[project.theme.palette]]
-media = "(prefers-color-scheme: dark)"
-scheme = "slate"
-toggle.icon = "lucide/moon"
-toggle.name = "Switch to system preference"
+primary = "white"
+accent = "black"
 
 # [[project.extra.social]]
 # icon = "fontawesome/brands/github"

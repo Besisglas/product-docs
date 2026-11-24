@@ -1,0 +1,21 @@
+/* Light, responsive support layout; retain the theme's accessible navigation. */
+:root, [data-md-color-scheme="default"] {
+  --md-default-bg-color: #fff;
+  --md-primary-fg-color: #fff;
+  --md-primary-bg-color: #202124;
+  --md-accent-fg-color: #333;
+  --md-typeset-a-color: #303030;
+}
+.md-header { box-shadow: 0 1px 0 #e8e8e8; }
+.md-typeset { font-size: .85rem; line-height: 1.7; }
+.md-typeset h1 { color: #202124; font-weight: 650; letter-spacing: -.025em; }
+.md-typeset a:not(.md-button) { text-decoration: underline; text-underline-offset: .18em; }
+.md-typeset .md-button { border-radius: .4rem; margin: .3rem .3rem .3rem 0; }
+.md-typeset .md-button--primary { background: #222; border-color: #222; color: #fff; }
+.md-typeset .grid.cards > ul > li { border-radius: .6rem; padding: 1.2rem; box-shadow: none; }
+.md-typeset .grid.cards > ul > li:hover { border-color: #777; box-shadow: none; }
+.md-typeset .grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); }
+@media (max-width: 600px) {
+  .md-typeset h1 { font-size: 1.8em; }
+  .md-typeset .md-button { display: block; text-align: center; margin-right: 0; }
+}

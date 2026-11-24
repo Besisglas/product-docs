@@ -1,174 +1,62 @@
 ---
-icon: lucide/rocket
+title: Besisglas Product Support
 ---
 
-# Get started
+# Besisglas Product Support
 
-For full documentation visit [zensical.org](https://zensical.org/docs/).
+Find your product. Get started with confidence.
 
-## Commands
+Choose the model and appearance shown on your product or packaging to find the right documentation.
 
-* [`zensical new`][new] - Create a new project
-* [`zensical serve`][serve] - Start local web server
-* [`zensical build`][build] - Build your site
+[Browse all products](products/index.md){ .md-button .md-button--primary }
+[Getting started](getting-started/index.md){ .md-button }
 
-  [new]: https://zensical.org/docs/usage/new/
-  [serve]: https://zensical.org/docs/usage/preview/
-  [build]: https://zensical.org/docs/usage/build/
+## Find your product
 
-## Examples
+<div class="grid cards" markdown>
 
-### Admonitions
+- **Temperature & Humidity**
 
-> Go to [documentation](https://zensical.org/docs/authoring/admonitions/)
+    Three TH01 designs, with separate guides for each appearance.
 
-!!! note
+    [TH01 · AAA](products/th01/index.md) · [TH01 Round](products/th01-round/index.md) · [TH01 LCD](products/th01-lcd/index.md)
 
-    This is a **note** admonition. Use it to provide helpful information.
+- **Soil Sensors**
 
-!!! warning
+    Find documentation for your soil temperature and humidity sensor.
 
-    This is a **warning** admonition. Be careful!
+    [STH01](products/sth01/index.md)
 
-### Details
+- **Presence Sensors**
 
-> Go to [documentation](https://zensical.org/docs/authoring/admonitions/#collapsible-blocks)
+    Find your radar presence sensor guide.
 
-??? info "Click to expand for more info"
+    [MS01](products/ms01/index.md)
 
-    This content is hidden until you click to expand it.
-    Great for FAQs or long explanations.
+- **Door & Window Sensors**
 
-## Code Blocks
+    Choose the standard or wired-contact model.
 
-> Go to [documentation](https://zensical.org/docs/authoring/code-blocks/)
+    [DS01](products/ds01/index.md) · [DS02](products/ds02/index.md)
 
-``` python hl_lines="2" title="Code blocks"
-def greet(name):
-    print(f"Hello, {name}!")  # (1)!
+- **Wireless Buttons**
 
+    Find the guide for your Zigbee button.
 
-greet("Python")
-```
+    [Zigbee button](products/ts0041/index.md)
 
-1.  > Go to [documentation](https://zensical.org/docs/authoring/code-blocks/#code-annotations)
+- **Leak Sensors & Receivers**
 
-    Code annotations allow to attach notes to lines of code.
+    Browse the remaining product families.
 
-Code can also be highlighted inline: `#!python print("Hello, Python!")`.
+    [Water leak sensor](products/water-leak-sensor/index.md) · [433 MHz receiver](products/433-receiver/index.md)
 
-## Content tabs
+</div>
 
-> Go to [documentation](https://zensical.org/docs/authoring/content-tabs/)
+## Need a hand?
 
-=== "Python"
+- [Getting Started](getting-started/index.md): identify your device and choose a setup guide.
+- [Troubleshooting](troubleshooting/index.md): collect the details needed to resolve an issue.
+- [Support](support/index.md): prepare a support request.
 
-    ``` python
-    print("Hello from Python!")
-    ```
-
-=== "Rust"
-
-    ``` rs
-    println!("Hello from Rust!");
-    ```
-
-## Diagrams
-
-> Go to [documentation](https://zensical.org/docs/authoring/diagrams/)
-
-``` mermaid
-graph LR
-  A[Start] --> B{Error?};
-  B -->|Yes| C[Hmm...];
-  C --> D[Debug];
-  D --> B;
-  B ---->|No| E[Yay!];
-```
-
-## Footnotes
-
-> Go to [documentation](https://zensical.org/docs/authoring/footnotes/)
-
-Here's a sentence with a footnote.[^1]
-
-Hover it, to see a tooltip.
-
-[^1]: This is the footnote.
-
-
-## Formatting
-
-> Go to [documentation](https://zensical.org/docs/authoring/formatting/)
-
-- ==This was marked (highlight)==
-- ^^This was inserted (underline)^^
-- ~~This was deleted (strikethrough)~~
-- H~2~O
-- A^T^A
-- ++ctrl+alt+del++
-
-## Icons, Emojis
-
-> Go to [documentation](https://zensical.org/docs/authoring/icons-emojis/)
-
-* :sparkles: `:sparkles:`
-* :rocket: `:rocket:`
-* :tada: `:tada:`
-* :memo: `:memo:`
-* :eyes: `:eyes:`
-
-## Maths
-
-> Go to [documentation](https://zensical.org/docs/authoring/math/)
-
-$$
-\cos x=\sum_{k=0}^{\infty}\frac{(-1)^k}{(2k)!}x^{2k}
-$$
-
-!!! warning "Needs configuration"
-    Note that MathJax is included via a `script` tag on this page and is not
-    configured in the generated default configuration to avoid including it
-    in a pages that do not need it. See the documentation for details on how
-    to configure it on all your pages if they are more Maths-heavy than these
-    simple starter pages.
-
-<script id="MathJax-script" src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [["\\(", "\\)"]],
-      displayMath: [["\\[", "\\]"]],
-      processEscapes: true,
-      processEnvironments: true
-    },
-    options: {
-      ignoreHtmlClass: ".*|",
-      processHtmlClass: "arithmatex"
-    }
-  };
-
-  document$.subscribe(() => {
-    MathJax.startup.output.clearCache()
-    MathJax.typesetClear()
-    MathJax.texReset()
-    MathJax.typesetPromise()
-  })
-</script>
-
-## Task Lists
-
-> Go to [documentation](https://zensical.org/docs/authoring/lists/#using-task-lists)
-
-* [x] Install Zensical
-* [x] Configure `zensical.toml`
-* [x] Write amazing documentation
-* [ ] Deploy anywhere
-
-## Tooltips
-
-> Go to [documentation](https://zensical.org/docs/authoring/tooltips/)
-
-[Hover me][example]
-
-  [example]: https://example.com "I'm a tooltip!"
+Product guides are being prepared. Pages clearly indicate where verified instructions are still pending.
